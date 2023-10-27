@@ -17,7 +17,6 @@ public class MyServlet2 extends HttpServlet {
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
 		String N= request.getParameter("nombre");
-
 		// send HTML page to client
 		try {
 			out.println("<!DOCTYPE html>");

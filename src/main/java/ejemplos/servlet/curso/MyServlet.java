@@ -10,13 +10,11 @@ import java.io.PrintWriter;
 
 @WebServlet(urlPatterns = "/myServlet")
 public class MyServlet extends HttpServlet {
-
 	protected void doGet(HttpServletRequest request,
 			HttpServletResponse response) throws ServletException, IOException {
 
 		response.setContentType("text/html");
 		PrintWriter out = response.getWriter();
-
 		// send HTML page to client
 		out.println("<html>");
 		out.println("<head><title>Servlets</title></head>");
@@ -27,7 +25,8 @@ public class MyServlet extends HttpServlet {
 		out.println("<input type=\"text\" name=\"nombre\"/><br><br>");
 		out.println("<input type=\"submit\" value=\"Enviar\">");
 		out.println("</form>");
-		out.println("</body></html>");
+		out.println("</body>");
+		out.println("</html>");
 	}
 
 }
