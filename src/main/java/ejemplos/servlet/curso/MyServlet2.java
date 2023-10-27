@@ -23,7 +23,7 @@ public class MyServlet2 extends HttpServlet {
 			out.println("<html>");
 			out.println("<head><title>Servlets</title></head>");
 			out.println("<body>");
-			out.println("<h1>Bienvenido!!  "+N+"</h1>");
+			out.println("<h1>Bienvenid@!!  "+N+"</h1>");
 			out.println("</body>");
 			out.println("</html>");
 		} finally {
